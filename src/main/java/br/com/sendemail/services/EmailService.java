@@ -23,7 +23,7 @@ public class EmailService {
             simpleMailMessage.setTo(email.email());
             // Construct the email body with name, phone, and message
             String emailBody = "Olá, o (a) " + email.name() + "!\n" +
-                    "Do telefone: " + email.phone() + "\n\n" + "Enviou uma mensagem:" + "\n\n" +
+                    "Do telefone: " + email.phone() + "\n\n" + "Enviou uma mensagem:" + "\n" +
                     email.message();
             simpleMailMessage.setSubject(email.subject());
             simpleMailMessage.setText(emailBody);
